@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameHub Argentina</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-galaxy fixed-top">
+        <div class="container">
+          <!-- Marca / Logo -->
+          <a class="navbar-brand fw-bold fs-3 text-white" href="#">
+            GAME HUB ARGENTINA
+          </a>
+
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#mision">Misión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#torneos">Torneos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reglas">Reglas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ranking">Ranking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quierocolaborar.html"
+                  >Quiero colaborar</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#login">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 🔹 Portada -->
+    <section class="hero">
+      <div class="fondo-oscuro"></div>
+      <div class="container posicion-relativa">
+        <h1 class="display-4 fw-bold">Jugamos por un propósito</h1>
+        <p class="lead">
+          Torneos gamers solidarios que transforman pasión en ayuda real.
+        </p>
+        <a href="#torneos" class="btn btn-primary btn-lg mt-3">Ver Torneos</a>
+      </div>
+    </section>
+
+    <!-- 🔹 Misión -->
+    <section id="mision" class="container py-5">
+      <h2>Misión y Objetivos</h2>
+      <p>
+        GameHub Argentina organiza torneos de videojuegos para recaudar
+        donaciones destinadas a comedores y ONG locales. Promovemos el gaming
+        como herramienta de impacto social positivo.
+      </p>
+    </section>
+
+    <!-- 🔹 Torneos -->
+    <section id="torneos" class="container py-5">
+      <h2>Torneos en curso</h2>
+      <div class="row g-4">
+        <!-- Torneo 1 -->
+        <div class="col-md-4">
+          <div class="card torneo-card h-100">
+            <img
+              src="img/fifa.jpg"
+              class="torneo-img"
+              alt="Copa Primavera EA FC"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Copa FC 26</h5>
+              <p class="card-text">
+                Torneo solidario de fútbol virtual para recaudar útiles
+                escolares.
+              </p>
+              <a href="quierocolaborar.html" class="btn btn-primary"
+                >Quiero colaborar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Torneo 2 -->
+        <div class="col-md-4">
+          <div class="card torneo-card h-100">
+            <img
+              src="img/valorant.jpg"
+              class="torneo-img"
+              alt="Valorant Solidario"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Torneo de Valorant</h5>
+              <p class="card-text">
+                Competí y ayudá con donaciones para comedores locales.
+              </p>
+              <a href="quierocolaborar.html" class="btn btn-primary"
+                >Quiero colaborar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Torneo 3 -->
+        <div class="col-md-4">
+          <div class="card torneo-card h-100">
+            <img
+              src="img/minecraft.jpg"
+              class="torneo-img"
+              alt="Minecraft por la infancia"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gran torneo de Minecraft</h5>
+              <p class="card-text">
+                Construyamos juntos un futuro mejor jugando por los niños.
+              </p>
+              <a href="quierocolaborar.html" class="btn btn-primary"
+                >Quiero colaborar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Reglas -->
+    <section id="reglas" class="container py-5">
+      <h2>Reglamento general</h2>
+      <ul>
+        <li>Respeto entre participantes y organizadores.</li>
+        <li>No se permiten trampas o lenguaje ofensivo.</li>
+        <li>Las donaciones se entregan en los puntos designados.</li>
+        <li>Las decisiones del staff son finales.</li>
+      </ul>
+    </section>
+
+    <!-- 🔹 Ranking -->
+    <section id="ranking" class="container py-5">
+      <h2>Ranking de Jugadores</h2>
+      <table class="table table-dark table-striped mt-3">
+        <thead>
+          <tr>
+            <th>Posición</th>
+            <th>Jugador</th>
+            <th>Juego</th>
+            <th>Puntos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>LuchoPro</td>
+            <td>Valorant</td>
+            <td>1500</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>GamerQueen</td>
+            <td>EA FC</td>
+            <td>1350</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>MineCraftHero</td>
+            <td>Minecraft</td>
+            <td>1200</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 🔹 Testimonios -->
+    <section id="testimonios" class="bg-dark py-5 text-center">
+      <div class="container">
+        <h2>Testimonios de la comunidad</h2>
+        <blockquote class="blockquote mt-4">
+          <p>
+            “Gracias a GameHub Solidario, pude combinar mi pasión por el gaming
+            con ayudar a los demás.”
+          </p>
+          <footer class="blockquote-footer text-light">
+            Nico, jugador voluntario
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 🔹 FALTA CALENDARIO -->
+
+    <!-- 🔹 Login -->
+    <section id="login" class="container py-5 text-center">
+      <h2>Acceso para administradores</h2>
+      <div class="col-md-6 mx-auto mt-4">
+        <input
+          type="text"
+          id="usuario"
+          class="form-control mb-2"
+          placeholder="Usuario"
+        />
+        <input
+          type="password"
+          id="clave"
+          class="form-control mb-2"
+          placeholder="Clave"
+        />
+        <button class="btn btn-primary w-100" onclick="iniciarSesion()">
+          Ingresar
+        </button>
+        <p id="mensaje-error" class="text-danger mt-2"></p>
+      </div>
+    </section>
+
+    <!-- 🔹 Footer -->
+    <footer class="text-center py-4">
+      <p>© 2025 GameHub Solidario - Todos los derechos reservados</p>
+      <p>Santiago Torales</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS personalizado -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
