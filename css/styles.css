@@ -1,6 +1,6 @@
 /* --- GENERAL --- */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial", "Playfair Display";
   background-color: #0b0e1a;
   color: #fff;
   margin: 0;
@@ -135,4 +135,141 @@ footer {
   .hero p {
     font-size: 1rem;
   }
+}
+
+/* CUSTOM SELECT AZUL FUTURISTA */
+.custom-select {
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
+
+.select-selected {
+  background: #102040;
+  border: 1px solid #4aa3ff;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+}
+
+.select-items {
+  background: #0f1d3d;
+  border: 1px solid #4aa3ff;
+  border-radius: 8px;
+  margin-top: 5px;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.select-items div {
+  padding: 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.select-items div:hover {
+  background: #153170;
+}
+
+.select-hide {
+  display: none !important;
+}
+
+/* PANELS */
+.panel {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* FADE IN */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BOTONES MÁS GRANDES EN CELULAR */
+@media (max-width: 576px) {
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .d-flex.gap-3 {
+    flex-direction: column;
+  }
+
+  .select-selected,
+  .select-items div {
+    font-size: 1rem;
+  }
+}
+
+/*FORMAS DE APORTAR, DINERO*/
+/* Tarjetas de monto */
+.monto-card {
+  background: #142850;
+  border: 2px solid #4aa3ff;
+  border-radius: 12px;
+  padding: 18px 10px;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.monto-card:hover {
+  background: #1b3266;
+  transform: scale(1.05);
+}
+
+.monto-card.active {
+  background: #3057a6;
+  border-color: #72c2ff;
+  transform: scale(1.05);
+}
+
+/* Tarjetas de pago */
+.pago-card {
+  background: #0f1d3d;
+  padding: 15px;
+  border: 2px solid #4aa3ff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pago-card:hover {
+  background: #153170;
+  transform: scale(1.05);
+}
+
+.pago-img {
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----------- Inputs oscuros ----------- */
+.input-dark {
+  background-color: #1c1f26 !important;
+  border: 1px solid #444 !important;
+  color: white !important;
+}
+
+.input-dark:focus {
+  border-color: #63a4ff !important;
+  box-shadow: 0 0 8px #63a4ff;
 }
