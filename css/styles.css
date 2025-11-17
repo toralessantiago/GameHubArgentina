@@ -273,3 +273,39 @@ footer {
   border-color: #63a4ff !important;
   box-shadow: 0 0 8px #63a4ff;
 }
+
+/*---FORMULARIO EDITAR TORNEO YA EXISTENTE----*/
+
+#modalEditar .modal-content {
+  background: #ffffff !important;
+  color: #000 !important;
+}
+
+#modalEditar input,
+#modalEditar textarea,
+#modalEditar label {
+  color: #000 !important;
+}
+
+#modalEditar input::placeholder,
+#modalEditar textarea::placeholder {
+  color: #555 !important;
+}
+
+#modalEditar .form-control {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* MODALES */
+.modal-content.bg-dark {
+  background: linear-gradient(135deg, #11172a 0%, #0a1448 100%) !important;
+  border: 1px solid #4aa3ff;
+}
+.modal-header {
+  border-bottom: 1px solid #4aa3ff !important;
+  background: rgba(0, 191, 255, 0.1);
+}
+.modal-footer {
+  border-top: 1px solid #4aa3ff !important;
+}
