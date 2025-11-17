@@ -138,8 +138,6 @@ formSponsor.addEventListener("submit", (e) => {
     <p class="mb-1">Arrastre la imagen aquí<br>o haga clic para seleccionar</p>
     <small class="text-muted">Formatos: JPG, PNG — Máx 2MB</small>
   `;
-
-  renderSponsors();
 });
 
 function renderSponsors() {
